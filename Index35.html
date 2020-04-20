@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <meta charset="utf-8">
+		<title>Определяем грибы по внешним признакам</title>
+    </head>
+    <body>
+        <script> 
+			var color = prompt('Какого цвета ваш гриб?', 'Скорее белый, красный, желтый, коричневый, другой цвет');
+			var skirt = prompt('Есть ли у гриба "Юбка"?', 'да / нет');
+			
+			switch(color) {
+			case 'белый': {
+			if (skirt === 'нет') alert('вы нашли белый гриб');
+			else alert('c грибами нужно быть внимательными');
+			break;
+			}
+			case 'красный': {
+			if (skirt === 'да') alert('а не мухомор ли это');
+			else alert('может это подосиновик');
+			break;
+			}
+			default: alert('c грибами нужно быть внимательными');
+			}
+        </script>
+    </body>
+</html>
